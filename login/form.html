@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Shop - Find a Ball!</title>
+	<center> <img src="images/search.jpg" alt="Search" width="750" height="400"> 
+    <a href="Basket.html">ItemShop</a>
+	<a href="index.html">HomePage</a>
+</head>
+<body>
+	<form id = "ballForm">
+	  <fieldset>
+		<legend>Enter The Types Of Footballs You Would Like To Search
+		</legend>
+		<label for = "min_height">Minimum Price </label>
+		<input type="number" id="min_price" name="min_price" min ="3" max = "10">
+		
+		<label for = "max_height">Maximum Price</label>
+		<input type="number" id="max_price" name="max_price" min ="3" max = "10">
+		
+	  </fieldset>
+	  <fieldset>
+	  	<label for = "gender">Gender</label>
+		<select name="gender" id = "gender">
+		  <option value="Female">Female</option>
+		  <option value="Male">Male</option>
+		  <option value="Other">Other</option>
+		</select>
+      </fieldset>
+	  <fieldset>
+	  <input type="button" value="Find a ball" id ="find_Btn" id = "find_Btn"/>
+
+      </fieldset>	
+	</form>
+	
+	<section id ="placeContent">
+	
+	</section>
+
+	<script src = "football_finder.js"></script>
+</body>
+</html>
